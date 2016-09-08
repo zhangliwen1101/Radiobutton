@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RadioGroup
+        android:id="@+id/radioGroup_main_sex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radioButton_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radio_group_selector_left"
+            android:button="@null"
+            android:checked="true"
+            android:text="普通/加急转账"
+            android:textColor="@drawable/color_radiobutton"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radio_group_selector_right"
+            android:button="@null"
+            android:text="实时转账"
+            android:textColor="@drawable/color_radiobutton"
+            android:textSize="20sp" />
+    </RadioGroup>
+
+    <com.example.radiobutton.CommonRadioGroup
+        android:id="@+id/segment_text"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroup_main_sex"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dip"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/button_all"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="代金券 "
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@drawable/button_text_selector" />
+
+        <RadioButton
+            android:id="@+id/button_one"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="红包"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@drawable/button_text_selector" />
+
+        <RadioButton
+            android:id="@+id/button_two"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="红包"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@drawable/button_text_selector" />
+
+        <RadioButton
+            android:id="@+id/button_three"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="红包"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@drawable/button_text_selector" />
+    </com.example.radiobutton.CommonRadioGroup>
+
+</RelativeLayout>
